@@ -48,7 +48,7 @@ plt.figure(figsize=(12, 6))
 for i, count in enumerate(most_frequent_genre['count']):
     plt.text(x=most_frequent_genre['decade'][i], y=count , s=most_frequent_genre['genre'][i], ha='center', va='bottom')
 
-plt.scatter(most_frequent_genre['decade'], most_frequent_genre['count'], color='skyblue',edgecolor='green')
+plt.bar(most_frequent_genre['decade'], most_frequent_genre['count'], color='skyblue',edgecolor='green')
 plt.xlabel('Decade')
 plt.ylabel('Number of Movies')
 plt.title('Most Frequent Genre per Decade')
